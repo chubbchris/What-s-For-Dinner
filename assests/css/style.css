@@ -1,0 +1,40 @@
+:root {
+    --primary: rgba(160, 23, 160, 0.842); 
+    --secondary: rgba(255, 230, 0, 0.753);
+    --tertiary: rgb(177, 174, 174);
+    ----quarternary-color:white;
+ }
+
+header {
+    margin: 15px;
+    padding: 20px;
+}
+header h1 {
+    color: var(--primary);
+    font-size: 50px;
+    display: inline;
+}
+header nav {
+    display: inline;
+    font-size: 20px;
+}
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 10px;
+    
+}
+
+header nav ul li a {
+   text-decoration: none;
+   color: var(--primary);
+}
+
+select {
+    color: yellow;
+}
