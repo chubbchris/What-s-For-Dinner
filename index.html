@@ -12,8 +12,8 @@
     <header>
 <h1>What's For Dinner?</h1>
 <!-- links to sections or we can link to seprate page with saved content????let me know -->
-<nav>
-    <ul>
+<nav class="level">
+    <ul class="is-pulled-left">
         <li>
             <a href="">Recipes</a>
         </li>
@@ -31,7 +31,7 @@
        <!--Food input form can be changed bases on what we find in api-->
     <form>
         <div>
-        <select name="">
+        <select name="" class="select is-success is-rounded m-5 is-overlay">
             <option value="" disabled selected>Pick type of dish</option>
             <option value="">Red Meats</option>
             <option value="">Vegetarian</option>
@@ -40,13 +40,15 @@
             <option value="">Vegan</option>
             <option value="">Low Calorie</option>
           </select>
-          <h3>Are you Alergic to Any of These?</h3>
+          <div class="is-pulled-left">
+          <h3 class="m-2">Are you Alergic to Any of These?</h3>
           <label for="peanuts"> Peanuts</label>
           <input type="radio" id="" name="" value="Peanuts">
           <label for="shellfish">Shell fish</label>
           <input type="radio" id="" name=""value="Shell fish">
           <label for="tree-nuts">Tree nuts</label>
           <input type="radio" id="" name=""value="Tree nuts">
+          </div>
         </div>
     </form>
 </section>
@@ -67,6 +69,12 @@
 
 </section>
 <!--if anyone comes up with a team name put it here or something more creative -->
-<footer>Made by MCK Chef</footer>
+<footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong class="is-size-1 has-text-white">Made By MCK Chef</strong> 
+      </p>
+    </div>
+  </footer>
 </body>
 </html>

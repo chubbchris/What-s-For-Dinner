@@ -35,6 +35,16 @@ header nav ul li a {
    color: var(--primary);
 }
 
-select {
-    color: yellow;
+
+.footer  {
+    background-color: var(--primary);
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+
+    
 }
+
+
