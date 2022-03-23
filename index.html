@@ -12,47 +12,35 @@
     <header>
 <h1>What's For Dinner?</h1>
 <!-- links to sections or we can link to seprate page with saved content????let me know -->
-<nav>
-    <ul>
-        <li>
-            <a href="">Recipes</a>
-        </li>
-        <li>
-            <a href="">Recipes I Like</a>
-        </li>
-        <li>
-            <a href="">Recipes I Dislike</a>
-        </li>
-    </ul>
-</nav>
 </header>
     
    <section class="" id="">
        <!--Food input form can be changed bases on what we find in api-->
     <form>
         <div>
-        <select name="" class="select is-success is-rounded m-5 is-overlay">
-            <option value="" disabled selected>Pick type of dish</option>
-            <option value="">Red Meats</option>
-            <option value="">Vegetarian</option>
-            <option value="">Seafood</option>
-            <option value="">Chicken</option>
-            <option value="">Vegan</option>
-            <option value="">Low Calorie</option>
+        <select name="cuisineStyle" class="select is-success is-rounded m-5 is-overlay">
+            <option value="" disabled selected>What type of Dish would you like?</option>
+            <option value="">Mediterranean</option>
+            <option value="">Middle Eastern</option>
+            <option value="">Nordic</option>
+            <option value="">American</option>
+            <option value="">Italian</option>
+            <option value="">South American</option>
           </select>
-          <div class="is-pulled-left">
-          <h3 class="m-2">Are you Alergic to Any of These?</h3>
-          <label for="peanuts"> Peanuts</label>
-          <input type="radio" id="" name="" value="Peanuts">
-          <label for="shellfish">Shell fish</label>
-          <input type="radio" id="" name=""value="Shell fish">
-          <label for="tree-nuts">Tree nuts</label>
-          <input type="radio" id="" name=""value="Tree nuts">
-<<<<<<< HEAD
-          </div>
-=======
-        <button for="submit" class="fetchApi"> Search Recipes</button>
->>>>>>> 6a3bfe79eab8463eaf53406a6b9de1fdf4b34554
+          
+          <select name="dietLabel" class="select is-success is-rounded m-5 is-overlay">
+            <option value="" disabled selected>Are you on a diet? Which type?</option>
+            <option value=""> Balanced</option>
+            <option value="">High Fiber</option>
+            <option value="">High Protien</option>
+            <option value="">Low Carb</option>
+            <option value="">Low Fat</option>
+            <option value="">Los Sodium</option>
+          </select> 
+        </div>
+        <div>
+        <button type="submit" class="fetchFoodApi" > Get Recipe</button>
+        <button type="submit" class="fetchBeerApi"> Try A Beer </button>
         </div>
 
     </form>
@@ -60,27 +48,14 @@
     <!-- where the magic happens drag and drop menu maybe?-->
     <section class="" id="">
         Recipes 
-<!--This section is where the recipes will be displayed-->
-<<<<<<< HEAD
-        <div class="" id="">
-            Recipes I Like
-=======
-        <div class="recipeDisplay" id="">
 
->>>>>>> 6a3bfe79eab8463eaf53406a6b9de1fdf4b34554
-        </div>
-<!--This section is where we can put recipes we like -->
-        <div class="" id="">
+    </section>
 
-        </div>
-<!-- This section is where we can put recipes we dislike-->
-        <div class="" id="">
-            Recipes I Dislike
-        </div>
+    <section class="" id="">
+       Beers
 
-</section>
+    </section>
 <!--if anyone comes up with a team name put it here or something more creative -->
-<<<<<<< HEAD
 <footer class="footer">
     <div class="content has-text-centered">
       <p>
@@ -89,9 +64,5 @@
     </div>
   </footer>
   <script src="./assests/js/script.js"></script>
-=======
-<footer>made by the A team</footer>
-<script src="./assests/js/script.js"></script>
->>>>>>> 6a3bfe79eab8463eaf53406a6b9de1fdf4b34554
 </body>
 </html>
