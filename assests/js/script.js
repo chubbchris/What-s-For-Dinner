@@ -21,3 +21,5 @@ function getapi (){
 
 }
 fetchButton.addEventListener("click",getapi())
+
+
