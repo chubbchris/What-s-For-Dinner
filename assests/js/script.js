@@ -2,6 +2,11 @@
 var fetchFoodButton= document.querySelector(".fetchFoodApi");
 var fetchBeerButton=document.querySelector(".fetchBeerApi");
 var recipesDataDisplay= document.querySelector(".recipesDisplay");
+var selectCuisineInput= document.querySelector("#selectCuisineStyle")
+var selectDietInput= document.querySelector("#selectDietLabel")
+
+console.log(selectCuisineInput)
+console.log(selectDietInput)
 
 function getFoodApi (){
     var requestUrl= "https://api.edamam.com/api/recipes/v2?type=public&q=Data&app_id=4cd7c7b2&app_key=30a6424795a6d890b5099d0e7e386fab";
@@ -14,7 +19,11 @@ function getFoodApi (){
     })
  .then(function(data){
      for(var i=0;i<data.hits.length;i++)
-    console.log(data.hits[i])
+    console.log(data.hits[i]);
+    
+   
+    
+    
  })
 }
  function getBeersApi (){
