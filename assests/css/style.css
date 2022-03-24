@@ -1,0 +1,50 @@
+:root {
+    --primary: rgba(160, 23, 160, 0.842); 
+    --secondary: rgba(255, 230, 0, 0.753);
+    --tertiary: rgb(177, 174, 174);
+    ----quarternary-color:white;
+ }
+
+header {
+    padding: 20px 25px;
+    position: sticky;
+    top: 0;
+}
+header h1 {
+    color: var(--primary);
+    font-size: 50px;
+    text-align: center;
+}
+header nav {
+    display: inline;
+    font-size: 20px;
+}
+header nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 5px;
+}
+
+header nav ul li a {
+   text-decoration: none;
+   color: var(--primary);
+   text-align: center;
+}
+
+
+.footer  {
+    background-color: var(--primary);
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+
+    
+}
+
+
