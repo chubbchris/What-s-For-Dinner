@@ -14,18 +14,15 @@ function getFoodApi (){
     fetch(requestUrl)
     .then(function(response){
         console.log(response)
-        return response.json();
+        response.json().then(function(data) {
+            console.log(data);
+            displayRecipes(data);
+        })
         
-    })
- .then(function(data){
-     for(var i=0;i<data.hits.length;i++)
-    console.log(data.hits[i]);
-    
-   
-    
-    
- })
+    });
+
 }
+
  function getBeersApi (){
     var requestUrl= "https://api.punkapi.com/v2/beers";
     
@@ -43,11 +40,8 @@ function getFoodApi (){
 }
 
 var displayRecipes = function () {
-    var recipeDiv = document.getElementById("recipe");
-    var recipeDivEl = document.createElement("li");
-    recipeDivEl.textContent = data.recipe.uri;
-    recipeDiv.appendChild(recipeDivEl);
-}
+   document.getElementById("recipe").textContent = recipe.cuisineType
+};
 
 
 fetchFoodButton.addEventListener("click",getFoodApi())
