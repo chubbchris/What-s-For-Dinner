@@ -1,6 +1,6 @@
 
-var fetchFoodButton= document.querySelector(".fetchFoodApi");
-var fetchBeerButton=document.querySelector(".fetchBeerApi");
+var fetchFoodButton= document.querySelector("#fetchFoodApi");
+var fetchBeerButton=document.querySelector("#fetchBeerApi");
 var recipesDataDisplay= document.querySelector(".recipesDisplay");
 var selectCuisineInput= document.querySelector("#selectCuisineStyle")
 var selectDietInput= document.querySelector("#selectDietLabel")
@@ -37,11 +37,18 @@ var getFoodApi = function() {
         
     })
  .then(function(data){
-     for(var i=0;i<data.length;i++){
-         console.log(data[i])
-     }
- })
-}
+    var numbers= Math.floor(Math.random() * 24)
+    for (var i=0;i<data.length;i++){
+        var beerDiv= document.querySelector("#beer");
+        var beerDivEl=document.createElement("li");
+        beerDivEl.textContent=data[i]
+        beerDiv.appendChild(beerDivEl);
+    
+     console.log(data[i]);
+     console.log(numbers)
+    
+    }
+ });
 
 var displayRecipes = function(data) {
 
