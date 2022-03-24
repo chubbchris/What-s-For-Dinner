@@ -13,7 +13,8 @@ function getFoodApi (){
         
     })
  .then(function(data){
-     console.log(data)
+     for(var i=0;i<data.hits.length;i++)
+    console.log(data.hits[i])
  })
 }
  function getBeersApi (){
@@ -26,7 +27,9 @@ function getFoodApi (){
         
     })
  .then(function(data){
-     console.log(data)
+     for(var i=0;i<data.length;i++){
+         console.log(data[i])
+     }
  })
 }
 fetchFoodButton.addEventListener("click",getFoodApi());
