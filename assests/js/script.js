@@ -17,18 +17,17 @@ var getFoodApi= function  (){
  .then(function(data){
     
  for (var i=0;i<data.hits.length;i++){
-    var obj = JSON.parse(data.hits[i]);
     var recipeDiv= document.querySelector("#recipe")
     var recipeDivEl= document.createElement("li")
-    recipeDivEl.textContent= obj
+    recipeDivEl.textContent= data.hits[i]
     recipeDiv.appendChild(recipeDivEl)
-     console.log(obj)
+     console.log(data.hits[i])
 
  }
     
  })
 };
-var getBeersApi =  function (){
+var getBeersApi=  function (){
     var requestUrl= "https://api.punkapi.com/v2/beers";
     
     fetch(requestUrl)
