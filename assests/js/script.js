@@ -21,7 +21,7 @@ var getFoodApi= function  (){
     var recipeDivEl= document.createElement("li")
     recipeDivEl.textContent= data.hits[i]
     recipeDiv.appendChild(recipeDivEl)
-     console.log(data.hits[i])
+     console.log(data.hits[i].recipe.cuisineType)
 
  }
     
