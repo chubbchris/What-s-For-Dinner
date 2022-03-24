@@ -17,11 +17,12 @@ var getFoodApi= function  (){
  .then(function(data){
     
  for (var i=0;i<data.hits.length;i++){
+    var obj = JSON.parse(data.hits[i]);
     var recipeDiv= document.querySelector("#recipe")
     var recipeDivEl= document.createElement("li")
-    recipeDivEl.textContent= data.hits[i]
+    recipeDivEl.textContent= obj
     recipeDiv.appendChild(recipeDivEl)
-     console.log(data.hits[i].recipe.cuisineType)
+     console.log(obj)
 
  }
     
