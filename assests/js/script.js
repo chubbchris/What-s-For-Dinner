@@ -41,6 +41,15 @@ function getFoodApi (){
      }
  })
 }
-fetchButton.addEventListener("click",getapi())
+
+var displayRecipes = function () {
+    var recipeDiv = document.getElementById("recipe");
+    var recipeDivEl = document.createElement("li");
+    recipeDivEl.textContent = data.recipe.uri;
+    recipeDiv.appendChild(recipeDivEl);
+}
+
+
+fetchFoodButton.addEventListener("click",getFoodApi())
 
 
