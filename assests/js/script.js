@@ -18,6 +18,7 @@ var getFoodApi= function  (){
         
     })
  .then(function(data){
+    console.log(data.hits[i]);
      for(var i=0;i<data.hits.length;i++)
      var recipeDiv = document.getElementById("recipe");
     var recipeDivEl = document.createElement("li");
@@ -41,16 +42,14 @@ var getBeersApi =  function (){
         
     })
  .then(function(data){
-     for(var i=0;i<data.length;i++){
-    
-    console.log(data);
- }
+     console.log(data);
+ });
 
-})
+
 }
 
 
-fetchFoodButton.addEventListener("click",getFoodApi())
-fetchBeerButton.addEventListener("click",getBeersApi())
+fetchFoodButton.addEventListener("click",getFoodApi());
+fetchBeerButton.addEventListener("click",getBeersApi());
 
 
