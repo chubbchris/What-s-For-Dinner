@@ -16,63 +16,21 @@
     
    <section class="" id="">
        <!--Food input form can be changed bases on what we find in api-->
-    <form>
-        <div>
+       <form>
+        <input class="input" type="text" placeholder="Search Recipe">
+        <button class="search button" type="submit">Search</button>
+       </form>
 
-        <select name="cuisineStyle" id="selectCuisineStyle" class="select is-success is-rounded m-5 is-overlay">
-            <option value="" disabled selected>What type of Dish would you like?</option>
-            <option value="mediterranean">Mediterranean</option>
-            <option value="middle eastern">Middle Eastern</option>
-            <option value="nordic">Nordic</option>
-            <option value="american">American</option>
-            <option value="italian">Italian</option>
-            <option value="south smerican">South American</option>
-          </select>
-
-          <div class="is-pulled-left">
-          <h3 class="m-2">Are you Alergic to Any of These?</h3>
-           <select name="">
-            <option value="" disabled selected>Pick the type of dish</option>
-            <option value="">Red Meats</option>
-            <option value="">Vegetarian</option>
-            <option value="">Seafood</option>
-            <option value="">Chicken</option>
-            <option value="">Vegan</option>
-            <option value="">Low calorie</option>
-          </select>
-          <h3>Are you allergic to any of these?</h3>
-
-          
-          <select name="dietLabel" id="selectDietLabel" class="select is-success is-rounded m-5 is-overlay">
-            <option value="" disabled selected>Are you on a diet? Which type?</option>
-            <option value="balanced"> Balanced</option>
-            <option value="high-fiber">High Fiber</option>
-            <option value="high-protien">High Protien</option>
-            <option value="low-carb">Low Carb</option>
-            <option value="low-fat">Low Fat</option>
-            <option value="low-sodium">Low Sodium</option>
-          </select> 
-        </div>
-        <div>
         <button type="submit" class="fetchFoodApi" > Get Recipe</button>
         <button type="submit" class="fetchBeerApi"> Try A Beer </button>
-
-
-
-        </div>
-
-    </form>
 </section>
     <section class="columns">
       <div  class="column" id="recipe">
-        Recipes
-        <ol>
-          
-        </ol>
+       
       </div>
 
       <div class="column" id="beer">
-        Beer
+      
       </div>
     </section>
 <!--if anyone comes up with a team name put it here or something more creative -->

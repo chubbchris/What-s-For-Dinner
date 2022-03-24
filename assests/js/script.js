@@ -8,7 +8,7 @@ var selectDietInput= document.querySelector("#selectDietLabel")
 console.log(selectCuisineInput)
 console.log(selectDietInput)
 
-function getFoodApi (){
+var getFoodApi = function(){
     var requestUrl= "https://api.edamam.com/api/recipes/v2?type=public&q=Data&app_id=4cd7c7b2&app_key=30a6424795a6d890b5099d0e7e386fab";
     
     fetch(requestUrl)
