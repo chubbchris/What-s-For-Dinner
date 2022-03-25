@@ -15,13 +15,13 @@ var getFoodApi= function  (){
         
     })
  .then(function(data){
-    
+    console.log("food", data.hits);
  for (var i=0;i<data.hits.length;i++){
     var recipeDiv= document.querySelector("#recipe")
     var recipeDivEl= document.createElement("li")
-    recipeDivEl.textContent= data.hits[i]
+    recipeDivEl.textContent= data.hits[i].recipe.label
     recipeDiv.appendChild(recipeDivEl)
-     console.log(data.hits[i])
+     console.log("data hits", data.hits[i])
 
  }
     
@@ -46,7 +46,7 @@ function getBeersApi (){
     for (var i=0;i<data.length;i++){
         var beerDiv= document.querySelector("#beer");
         var beerDivEl=document.createElement("li");
-        beerDivEl.textContent=data[i]
+        beerDivEl.textContent=data[i].name + " - " + data[i].tagline
         beerDiv.appendChild(beerDivEl);
     
      console.log(data[i]);
