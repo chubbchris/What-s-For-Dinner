@@ -27,7 +27,8 @@ var getFoodApi = function() {
 
 
 
- function getBeersApi (){
+ 
+function getBeersApi (){
     var requestUrl= "https://api.punkapi.com/v2/beers";
     
     fetch(requestUrl)
@@ -49,6 +50,9 @@ var getFoodApi = function() {
     
     }
  });
+};
+
+
 
 var displayRecipes = function(data) {
 
