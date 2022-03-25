@@ -57,3 +57,24 @@ header nav ul li a {
 .search button {
     border-color: var(--secondary);
 }
+.optionsSection{
+    display: flex;
+}
+.optionsSection h2 {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    color:rgba(160, 23, 160, 0.842);
+    font-size: 25px;
+}
+.optionsSection ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color:rgba(160, 23, 160, 0.842);
+    text-decoration: none;
+}
+.optionsSection ul li {
+    display: flex;
+    padding: 10px;
+}
