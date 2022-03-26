@@ -17,12 +17,17 @@ var fetchFoodButton= document.querySelector("#fetchFoodApi");
 	 .then(function(data){
 	    
 	 for (var i=0;i<data.hits.length;i++){
-	    var recipeDiv= document.querySelector("#recipe")
-	    var recipeDivEl= document.createElement("li")
-	    recipeDivEl.textContent= data.hits[i].recipe.cuisineType
-        // make a image tag with data.hits[i].image
-	    recipeDiv.appendChild(recipeDivEl)
-	     console.log("data hits", data.hits[i])
+	    var recipeDiv= document.querySelector("#recipe");
+	    var recipeDivEl= document.createElement("li");
+        var recipeImageEl = document.createElement("img");
+        var recipeLinkEl = document.createElement("h2")
+	    recipeDivEl.textContent= data.hits[i].recipe.cuisineType;
+        recipeImageEl.setAttribute("src", data.hits[i].recipe.image);
+        recipeLinkEl.textContent = data.hits[i].recipe.url;
+	    recipeDiv.appendChild(recipeDivEl);
+        recipeDivEl.appendChild(recipeImageEl);
+        recipeDivEl.appendChild(recipeLinkEl);
+	     console.log("data hits", data.hits[i]);
 
 
 	 }
