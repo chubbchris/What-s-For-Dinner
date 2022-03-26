@@ -37,7 +37,7 @@ var  getBeersApi = function (){
     
     fetch(requestUrl)
     .then(function(response){
-        console.log(response)
+        console.log(response);
         return response.json();
         
     })
@@ -47,15 +47,15 @@ var  getBeersApi = function (){
         if(numbers===data[i].id){
         var beerDiv= document.querySelector("#beer");
         var beerDivEl=document.createElement("li");
-        var beerImageEl=document.createElement("img")
-        beerImageEl.setAttribute("src", data[i].image_url)
-        beerDivEl.textContent=data[i].name + " - " + data[i].tagline
+        var beerImageEl=document.createElement("img");
+        beerImageEl.setAttribute("src", data[i].image_url);
+        beerDivEl.textContent=data[i].name + " - " + data[i].tagline;
         beerDiv.appendChild(beerDivEl); 
         beerDivEl.appendChild(beerImageEl);
 
         };  
      console.log(data[i]);
-     console.log(numbers)
+     console.log(numbers);
     
     }
  });

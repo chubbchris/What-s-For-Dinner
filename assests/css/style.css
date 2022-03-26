@@ -78,3 +78,14 @@ header nav ul li a {
     display: flex;
     padding: 10px;
 }
+#beer ul {
+    font-family:monospace;
+    font-size:xx-large ;
+    font-weight:bold;
+    color:rgb(129, 12, 23); 
+   
+}
+#beer li{
+ font-size: x-large;
+ list-style-type: none;
+}
