@@ -89,3 +89,7 @@ header nav ul li a {
  font-size: x-large;
  list-style-type: none;
 }
+#beer img {
+    width: 200px;
+    height: 450px;
+}
