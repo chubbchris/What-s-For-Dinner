@@ -1,13 +1,7 @@
 # What's For Dinner
 ***
-
-## Acceptance criteria
-- When I come looking for a recipe, then I am able to search for what I am interested in.
-- I can save the keywords and retrieve my saved searches through a link.
-***
-## What this features
-- Form that allows users to search a large variety of recipes, adding in their dietary needs, and benefits of choices.
-- Form that allows users to find a beer to have with their dinner.
+# Description
+This is a food application called What's for Dinner where you can click a button to get a random recipe and you can click a button to generate a random beer. This app is good for home cooks or anybody who is learning how to cook that like to try new recipes and drinks for fun. We wanted this to be fun and inclusive to everybody because who doesn't love to eat!   
 ***
 ## Technology used 
 - JavaScript
