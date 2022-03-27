@@ -34,30 +34,34 @@ var fetchFoodButton= document.querySelector("#fetchFoodApi");
 	    
 	 })
 	};
-	var getBeersApi=  function (){
-	    var requestUrl= "https://api.punkapi.com/v2/beers";
-	    
-	    fetch(requestUrl)
-	    .then(function(response){
-	        console.log(response)
-	        return response.json();
-	        
-	    })
-	 .then(function(data){
-	    var numbers= Math.floor(Math.random() * 24)
-	    for (var i=0;i<data.length;i++){
-	        var beerDiv= document.querySelector("#beer");
-	        var beerDivEl=document.createElement("li");
-	        beerDivEl.textContent=data[i].name + " - " + data[i].tagline
-	        beerDiv.appendChild(beerDivEl);
-	    
-	     console.log(data[i]);
-	     console.log(numbers)
-	    
-	    }
-	 });
-
-	}
+    var  getBeersApi = function (){
+        var requestUrl= "https://api.punkapi.com/v2/beers";
+        
+        fetch(requestUrl)
+        .then(function(response){
+            console.log(response);
+            return response.json();
+            
+        })
+     .then(function(data){
+        var numbers= Math.floor(Math.random() * 24)
+        for (var i=0;i<data.length;i++){
+            if(numbers===data[i].id){
+            var beerDiv= document.querySelector("#beer");
+            var beerDivEl=document.createElement("li");
+            var beerImageEl=document.createElement("img");
+            beerImageEl.setAttribute("src", data[i].image_url);
+            beerDivEl.textContent=data[i].name + " - " + data[i].tagline;
+            beerDiv.appendChild(beerDivEl); 
+            beerDivEl.appendChild(beerImageEl);
+    
+            };  
+         console.log(data[i]);
+         console.log(numbers);
+        
+        }
+     });
+    };
 
 
 
