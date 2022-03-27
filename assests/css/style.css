@@ -79,6 +79,8 @@ header nav ul li a {
     padding: 10px;
 }
 #beer ul {
+    display: flex;
+    flex-wrap: wrap;
     font-family:monospace;
     font-size:xx-large ;
     font-weight:bold;
@@ -97,6 +99,8 @@ header nav ul li a {
     height:350px;
 }
 #recipe ul{
+    display: flex;
+    flex-wrap: wrap;
     font-family:monospace;
     font-size: xx-large;
     font-weight: bold;
@@ -109,4 +113,11 @@ header nav ul li a {
     color:rgba(160, 23, 160, 0.842); 
     list-style-type: none;
     padding: 10px;
+}
+#recipe img {
+    padding:10px
+
+}
+#recipe a{
+    padding: 10px
 }
