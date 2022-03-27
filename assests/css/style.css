@@ -88,6 +88,25 @@ header nav ul li a {
    
 }
 #beer li{
+
+ font-size: x-large;
+ list-style-type: none;
+}
+#beer img {
+    width: 150px;
+    height: 350px;
+}
+
+#recipe ul {
+    color: var(--primary);
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#recipe img {
+    
+=======
     font-family:monospace;
     font-size: x-large;
     list-style-type: none;
