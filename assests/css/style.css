@@ -79,6 +79,8 @@ header nav ul li a {
     padding: 10px;
 }
 #beer ul {
+    display: flex;
+    flex-wrap: wrap;
     font-family:monospace;
     font-size:xx-large ;
     font-weight:bold;
@@ -86,6 +88,7 @@ header nav ul li a {
    
 }
 #beer li{
+
  font-size: x-large;
  list-style-type: none;
 }
@@ -100,3 +103,43 @@ header nav ul li a {
     font-size: 25px;
     font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+
+#recipe img {
+    
+=======
+    font-family:monospace;
+    font-size: x-large;
+    list-style-type: none;
+    color:rgba(160, 23, 160, 0.842); 
+    padding: 10px
+}
+#beer img{
+    width:150px;
+    height:350px;
+}
+#recipe ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-family:monospace;
+    font-size: xx-large;
+    font-weight: bold;
+    list-style-type: none;
+    color:rgba(160, 23, 160, 0.842);
+}
+#recipe li{
+    font-family:monospace;
+    font-size:x-large ;
+    color:rgba(160, 23, 160, 0.842); 
+    list-style-type: none;
+    padding: 10px;
+}
+#recipe img {
+    padding:10px
+
+}
+#recipe a{
+    padding: 10px
+}
+>>>>>>> 72a5ff3eaca9cfa86f9859c208f0b5f222e6f44d
