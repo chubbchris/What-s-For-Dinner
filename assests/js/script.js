@@ -15,8 +15,8 @@ var fetchFoodButton= document.querySelector("#fetchFoodApi");
 	        
 	    })
 	 .then(function(data){
-	    
 	 for (var i=0;i<data.hits.length;i++){
+        
 	    var recipeDiv= document.querySelector("#recipe");
 	    var recipeDivEl= document.createElement("li");
         var recipeHyperLinkEl=document.createElement("a")
@@ -29,10 +29,9 @@ var fetchFoodButton= document.querySelector("#fetchFoodApi");
 	    recipeDiv.appendChild(recipeDivEl);
         recipeDivEl.appendChild(recipeImageEl);
         recipeDivEl.appendChild(recipeHyperLinkEl);
-	     console.log("data hits", data.hits[i]);
-
-
-	 }
+	     console.log("data hits", data[i].hits);
+         }
+	 
 	    
 	 })
 	};
@@ -46,7 +45,7 @@ var fetchFoodButton= document.querySelector("#fetchFoodApi");
             
         })
      .then(function(data){
-        var numbers= Math.floor(Math.random() * 24)
+        var numbers= Math.floor(Math.random() * 24 +1)
         for (var i=0;i<data.length;i++){
             if(numbers===data[i].id){
             var beerDiv= document.querySelector("#beer");
