@@ -57,9 +57,6 @@ var fetchFoodButton= document.querySelector("#fetchFoodApi");
 	    }
 	 });
 
-
-
-
 	}
 
 
