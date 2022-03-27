@@ -19,14 +19,16 @@ var fetchFoodButton= document.querySelector("#fetchFoodApi");
 	 for (var i=0;i<data.hits.length;i++){
 	    var recipeDiv= document.querySelector("#recipe");
 	    var recipeDivEl= document.createElement("li");
+        var recipeHyperLinkEl=document.createElement("a")
         var recipeImageEl = document.createElement("img");
-        var recipeLinkEl = document.createElement("h2")
-	    recipeDivEl.textContent= data.hits[i].recipe.cuisineType;
+        var recipeLinkEl = data.hits[i].recipe.url
+	    recipeDivEl.textContent=  data.hits[i].recipe.cuisineType;
         recipeImageEl.setAttribute("src", data.hits[i].recipe.image);
-        recipeLinkEl.textContent = data.hits[i].recipe.url;
+        recipeHyperLinkEl.setAttribute("href",recipeLinkEl)
+        recipeHyperLinkEl.textContent = "Link to Recipe";
 	    recipeDiv.appendChild(recipeDivEl);
         recipeDivEl.appendChild(recipeImageEl);
-        recipeDivEl.appendChild(recipeLinkEl);
+        recipeDivEl.appendChild(recipeHyperLinkEl);
 	     console.log("data hits", data.hits[i]);
 
 
