@@ -93,3 +93,14 @@ header nav ul li a {
     width: 150px;
     height: 350px;
 }
+
+#recipe ul {
+    color: var(--primary);
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#recipe img {
+    
+}
