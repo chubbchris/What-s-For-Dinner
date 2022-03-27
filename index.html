@@ -14,54 +14,47 @@
 <!-- links to sections or we can link to seprate page with saved content????let me know -->
 </header>
     
+
    <section class="" id="">
        <!--Food input form can be changed bases on what we find in api-->
     <form>
         <div>
+   <section class="" id="">
+    <section class="optionsSection m-2">
 
-        <select name="cuisineStyle" id="selectCuisineStyle" class="select is-success is-rounded m-5 is-overlay">
-            <option value="" disabled selected>What type of Dish would you like?</option>
-            <option value="mediterranean">Mediterranean</option>
-            <option value="middle eastern">Middle Eastern</option>
-            <option value="nordic">Nordic</option>
-            <option value="american">American</option>
-            <option value="italian">Italian</option>
-            <option value="south smerican">South American</option>
-          </select>
-
-          <select name="dietLabel" id="selectDietLabel" class="select is-success is-rounded m-5 is-overlay">
-            <option value="" disabled selected>Are you on a diet? Which type?</option>
-            <option value="balanced"> Balanced</option>
-            <option value="high-fiber">High Fiber</option>
-            <option value="high-protien">High Protien</option>
-            <option value="low-carb">Low Carb</option>
-            <option value="low-fat">Low Fat</option>
-            <option value="low-sodium">Low Sodium</option>
-          </select> 
-        </div>
-        <div>
-        <button type="submit" class="fetchFoodApi" > Get Recipe</button>
-        <button type="submit" class="fetchBeerApi"> Try A Beer </button>
-
-
-
-        </div>
-
-    </form>
+      <h2 class=>Food Styles</h2>
+      <ul >
+          <li>mediterranean</li>
+          <li>middle eastern</li>
+          <li>nordic</li>
+          <li>asian</li>
+          <li>american</li>
+          <li>italian</li>
+          <li>south american</li>
+        </ul>
+      
+        
+        <button class="search button" id="fetchFoodApi" type="submit">Display Recipes</button>
+        <button class="search button" id="fetchBeerApi"type="submit">Random beer selector </button>
+       
+    </section>
 </section>
-    <!-- where the magic happens drag and drop menu maybe?-->
-    <section class="" id="">
-        Recipes 
-<!--This section is where the recipes will be displayed-->
-        <div class="" id="">
-            Recipes I Like
-        </div>
-<!--This section is where we can put recipes we like -->
-        <div class="" id="">
 
-    <section class="" id="">
-       Beers
 
+    <section class="columns">
+      <div  class="column m-5" id="recipe">
+       <ul>
+         Recipes
+       </ul>
+       <img id="pic">
+      </div>
+
+
+      <div class="column m-5" id="beer">
+      <ul>
+          Beer Choices 
+      </ul>
+      </div>
     </section>
 <!--if anyone comes up with a team name put it here or something more creative -->
 <footer class="footer">

@@ -48,3 +48,76 @@ header nav ul li a {
 }
 
 
+.input {
+    width: 20%;
+    border-radius: 7px;
+    border-color: var(--secondary);
+}
+
+.search button {
+    border-color: var(--secondary);
+}
+.optionsSection{
+    display: flex;
+}
+.optionsSection h2 {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    color:rgba(160, 23, 160, 0.842);
+    font-size: 25px;
+}
+.optionsSection ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color:rgba(160, 23, 160, 0.842);
+    text-decoration: none;
+}
+.optionsSection ul li {
+    display: flex;
+    padding: 10px;
+}
+#beer ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-family:monospace;
+    font-size:xx-large ;
+    font-weight:bold;
+    color:rgba(160, 23, 160, 0.842); 
+   
+}
+#beer li{
+    font-family:monospace;
+    font-size: x-large;
+    list-style-type: none;
+    color:rgba(160, 23, 160, 0.842); 
+    padding: 10px
+}
+#beer img{
+    width:150px;
+    height:350px;
+}
+#recipe ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-family:monospace;
+    font-size: xx-large;
+    font-weight: bold;
+    list-style-type: none;
+    color:rgba(160, 23, 160, 0.842);
+}
+#recipe li{
+    font-family:monospace;
+    font-size:x-large ;
+    color:rgba(160, 23, 160, 0.842); 
+    list-style-type: none;
+    padding: 10px;
+}
+#recipe img {
+    padding:10px
+
+}
+#recipe a{
+    padding: 10px
+}
