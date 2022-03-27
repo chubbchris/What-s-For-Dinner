@@ -66,8 +66,8 @@ var fetchFoodButton= document.querySelector("#fetchFoodApi");
 
 
 
-	fetchFoodButton.addEventListener("click",getFoodApi());
-	fetchBeerButton.addEventListener("click",getBeersApi());
+	fetchFoodButton.addEventListener("click",getFoodApi);
+	fetchBeerButton.addEventListener("click",getBeersApi);
 
 
 
